@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01a1281c-35a9-4b29-b35e-6f105cb2c100" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.xhtml" afterPath="$PROJECT_DIR$/index.xhtml" />
-      <change beforePath="$PROJECT_DIR$/static/jquery-theme/jquery-ui-redmond.css" afterPath="$PROJECT_DIR$/static/jquery-theme/jquery-ui-redmond.css" />
-      <change beforePath="$PROJECT_DIR$/style-ui.css" afterPath="$PROJECT_DIR$/style-ui.css" />
-    </list>
+    <list default="true" id="01a1281c-35a9-4b29-b35e-6f105cb2c100" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -188,12 +183,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513180502310</updated>
       <workItem from="1513180504282" duration="499000" />
-      <workItem from="1513224939812" duration="7013000" />
+      <workItem from="1513224939812" duration="7160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7512000" />
+    <option name="totallyTimeSpent" value="7659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1297" height="780" extended-state="6" />
