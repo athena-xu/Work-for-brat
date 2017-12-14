@@ -43,7 +43,13 @@ html {
 #options_button {
   float: right;
 }
-
+#data_button{
+  float:right;
+}
+#search_button,
+#search_button_label{
+  float:right;
+}
 #pulluptrigger {
   height: 35px;
   width:  35px;
@@ -350,13 +356,20 @@ div.scroll_wrapper_upper div.scroller {
 #logo:hover {
   opacity: 0.8;
 }
-
-#search_button {
-  margin-right: 0;
+#auth_button{
+  margin-right:.1em;
+  margin-left: .1em;
 }
-#search_button_label {
-  margin-right: 0;
-
+#data_button {
+  margin-right:.1em;
+  margin-left: .1em;
+}
+#search_button {
+  margin-right: .1em;
+  margin-left: .1em;
+}
+#options_button{
+  margin-right: .2em;
 }
 #clear_search_button {
   margin-left: 0;
