@@ -1269,13 +1269,50 @@ var VisualizerUI = (function($, window, undefined) {
 
       $('#search_button').click(showSearchForm);
 
-      //++importBtnForm++
-        var importBtnForm = $('#importForm');
-        var showImportBtnForm = function () {
-          dispatcher.post('showForm', [importBtnForm]);
-        }
-      $('#importButton').click(showImportBtnForm)
+      /* ++ importBtnForm ++ */
 
+
+        var importBtnForm = $('#importForm');
+
+        var importBtnFormSubmit = function(evt) {
+            dispatcher.post('hideForm');
+            return false;
+        };
+
+        importBtnForm.submit(importBtnFormSubmit);
+        initForm(importBtnForm, {
+            width: 400,
+            resizable: false,
+            no_cancel: true,
+            open: function(evt) {
+                keymap = {};
+                // aspects of the data form relating to the current document should
+                // only be shown when a document is selected.
+                if (!doc) {
+                    $('#document_export').hide();
+                    $('#document_visualization').hide();
+                } else {
+                    $('#document_export').show();
+                    $('#document_visualization').show();
+                    // the SVG button can only be accessed through the data form,
+                    // so we'll spare unnecessary saves by only saving here
+                    saveSVG();
+                }
+            }
+        });
+
+        var showImportBtnForm = function () {
+            dispatcher.post('showForm', [importBtnForm]);
+        }
+
+        $('#importButton').click(showImportBtnForm);
+
+
+
+
+
+
+      /* ++ importBtnForm End ++ */
 
 
 

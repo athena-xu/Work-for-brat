@@ -94,7 +94,7 @@ var AnnotatorUI = (function($, window, undefined) {
       };
 
       var makeSelRect = function(rx, ry, rw, rh, col) {
-        var selRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        var selRect = document.createElementNS("ht  tp://www.w3.org/2000/svg", "rect");
         selRect.setAttributeNS(null, "width", rw);
         selRect.setAttributeNS(null, "height", rh);
         selRect.setAttributeNS(null, "x", rx);

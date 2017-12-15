@@ -8,6 +8,7 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
     <meta name="google" value="notranslate"/>
     <link href="static/jquery-theme/jquery-ui-redmond.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="client/lib/head.load.min.js"></script>
     <script type="text/javascript">
       head.js(
@@ -40,6 +41,19 @@
           var ajax = new Ajax(dispatcher);
           var visualizer = new Visualizer(dispatcher, 'svg');
           var svg = visualizer.svg;
+          // function Test(name,age) {
+          //     this.name = name;
+          //     this.age = age;
+          //     this.show = function () {
+          //         console.log('name: ' + this.name)
+          //     }
+          //     console.log('age: ' + this.age)
+          //     console.log(name, age)
+          //
+          // }
+          // var myName = 'xsj';
+          // var test = new Test(myName, 18);
+          // console.log(test);
           var visualizerUI = new VisualizerUI(dispatcher, svg);
           var annotatorUI = new AnnotatorUI(dispatcher, svg);
           var spinner = new Spinner(dispatcher, '#spinner');
@@ -143,18 +157,29 @@
     <form id="importForm" class="dialog" title="import">
       <fieldset id="importForm_choose">
         <legend>Import Files</legend>
-        <input type="file" id="importfiles" class="borderless" multiple="multuple"/>
+        <label for="importfiles" class="fileSelect ui-button ui-widget ui-state-default ui-corner-all" style="display:inline-block;padding:.4em 1em;" title="Import, Export Data; Manage Collection">
+          Select
+          <input id="importfiles" type="file" value="Select" tabindex="-1" title="Import; Manage Collection" multiple="multiple" style="display:none;"/>
+        </label>
+        <label class="fileCount"></label>
+        <input id="Upload" type="button" class="ui-state-default ui-widget ui-button ui-corner-all" value="Upload"/>
       </fieldset>
       <fieldset id="importForm_def">
         <legend>Definition</legend>
-        <input type="button" id="import_definition"/>
+        <input type="button" id="import_definition" value="Definition" class="ui-state-default ui-widget ui-button ui-corner-all"/>
       </fieldset>
       <fieldset id="importFrom_tag">
         <legend>Tags</legend>
-        <input type="button" id="import_tag"/>
+        <input type="button" id="import_tag" value="Tag" class="ui-state-default ui-widget ui-button ui-corner-all"/>
       </fieldset>
     </form>
-
+    <script type="text/javascript">
+        $('form#importForm input#importfiles').change(function (event) {
+            var files = null;
+            files = event.originalEvent.target.files;
+            $('.fileCount').html(files.length + ' file(s) selected');
+        })
+    </script>
 
     <form id="import_form" class="dialog" title="Import">
       <fieldset id="import_form_docid">
