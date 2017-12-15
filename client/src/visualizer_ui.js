@@ -1271,11 +1271,41 @@ var VisualizerUI = (function($, window, undefined) {
 
       /* ++ importBtnForm ++ */
 
+        // var authFormSubmit = function(evt) {
+        //     dispatcher.post('hideForm');
+        //     var _user = $('#auth_user').val();
+        //     var password = $('#auth_pass').val();
+        //     dispatcher.post('ajax', [{
+        //         action: 'login',
+        //         user: _user,
+        //         password: password,
+        //     },
+        //         function(response) {
+        //             if (response.exception) {
+        //                 dispatcher.post('showForm', [authForm]);
+        //                 $('#auth_user').select().focus();
+        //             } else {
+        //                 user = _user;
+        //                 $('#auth_button').val('Logout ' + user);
+        //                 $('#auth_user').val('');
+        //                 $('#auth_pass').val('');
+        //                 $('.login').show();
+        //                 dispatcher.post('user', [user]);
+        //             }
+        //         }]);
+        //     return false;
+        // };
 
+
+
+        /*------------------*/
         var importBtnForm = $('#importForm');
 
         var importBtnFormSubmit = function(evt) {
             dispatcher.post('hideForm');
+            var fileList = $('importfiles')[0].files;
+            console.log(fileList)
+            // dispatcher.post('ajax',[])
             return false;
         };
 
@@ -1283,18 +1313,6 @@ var VisualizerUI = (function($, window, undefined) {
         initForm(importBtnForm, {
             width: 400,
             resizable: false,
-            no_cancel: true,
-            open: function(evt) {
-                keymap = {};
-                if (!doc) {
-                    $('#document_export').hide();
-                    $('#document_visualization').hide();
-                } else {
-                    $('#document_export').show();
-                    $('#document_visualization').show();
-                    saveSVG();
-                }
-            }
         });
 
         var showImportBtnForm = function () {
@@ -1303,11 +1321,6 @@ var VisualizerUI = (function($, window, undefined) {
 
         $('#importButton').click(showImportBtnForm);
 
-
-
-
-
-
       /* ++ importBtnForm End ++ */
 
 
@@ -1315,7 +1328,6 @@ var VisualizerUI = (function($, window, undefined) {
       /* ++ exportForm ++ */
 
         var exportForm = $('#exportForm');
-
         var exportFormSubmit = function(evt) {
             dispatcher.post('hideForm');
             return false;
@@ -1325,18 +1337,6 @@ var VisualizerUI = (function($, window, undefined) {
         initForm(exportForm, {
             width: 400,
             resizable: false,
-            no_cancel: true,
-            open: function(evt) {
-                keymap = {};
-                if (!doc) {
-                    $('#document_export').hide();
-                    $('#document_visualization').hide();
-                } else {
-                    $('#document_export').show();
-                    $('#document_visualization').show();
-                    saveSVG();
-                }
-            }
         });
 
         var showExportForm = function () {
