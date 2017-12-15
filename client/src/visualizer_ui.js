@@ -1269,6 +1269,16 @@ var VisualizerUI = (function($, window, undefined) {
 
       $('#search_button').click(showSearchForm);
 
+      //++importBtnForm++
+        var importBtnForm = $('#importForm');
+        var showImportBtnForm = function () {
+          dispatcher.post('showForm', [importBtnForm]);
+        }
+      $('#importButton').click(showImportBtnForm)
+
+
+
+
       var clearSearchResults = function() {
         // clear UI, don't show collection browser
         dispatcher.post('clearSearch', [true]);

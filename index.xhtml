@@ -138,6 +138,24 @@
       </div>
     </div>
     <div id="svg"></div>
+
+    <!--++Import dialog++-->
+    <form id="importForm" class="dialog" title="import">
+      <fieldset id="importForm_choose">
+        <legend>Import Files</legend>
+        <input type="file" id="importfiles" class="borderless" multiple="multuple"/>
+      </fieldset>
+      <fieldset id="importForm_def">
+        <legend>Definition</legend>
+        <input type="button" id="import_definition"/>
+      </fieldset>
+      <fieldset id="importFrom_tag">
+        <legend>Tags</legend>
+        <input type="button" id="import_tag"/>
+      </fieldset>
+    </form>
+
+
     <form id="import_form" class="dialog" title="Import">
       <fieldset id="import_form_docid">
         <legend>Document ID</legend>
