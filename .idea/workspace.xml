@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01a1281c-35a9-4b29-b35e-6f105cb2c100" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/src/annotator_ui.js" afterPath="$PROJECT_DIR$/client/src/annotator_ui.js" />
       <change beforePath="$PROJECT_DIR$/client/src/visualizer_ui.js" afterPath="$PROJECT_DIR$/client/src/visualizer_ui.js" />
       <change beforePath="$PROJECT_DIR$/index.xhtml" afterPath="$PROJECT_DIR$/index.xhtml" />
     </list>
@@ -22,20 +21,20 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="171" column="29" lean-forward="true" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+            <state relative-caret-position="282">
+              <caret line="180" column="10" lean-forward="true" selection-start-line="180" selection-start-column="10" selection-end-line="180" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,8 +57,8 @@
       <file leaf-file-name="visualizer_ui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/visualizer_ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23382">
-              <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="1345" column="25" lean-forward="false" selection-start-line="1345" selection-start-column="25" selection-end-line="1345" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -251,12 +250,12 @@
       <workItem from="1513224939812" duration="9100000" />
       <workItem from="1513240851082" duration="9519000" />
       <workItem from="1513304180921" duration="18000" />
-      <workItem from="1513327820233" duration="52000" />
+      <workItem from="1513327820233" duration="1898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33621000" />
+    <option name="totallyTimeSpent" value="35467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1297" height="780" extended-state="6" />
@@ -307,7 +306,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/visualizer_ui.js</url>
-          <line>1352</line>
+          <line>1390</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -323,15 +322,15 @@
           <folding>
             <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -401,15 +400,15 @@
           <folding>
             <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,6 +450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,15 +540,15 @@
           <folding>
             <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,15 +560,15 @@
           <folding>
             <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,28 +686,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/visualizer_ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23382">
-          <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="1345" column="25" lean-forward="false" selection-start-line="1345" selection-start-column="25" selection-end-line="1345" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="171" column="29" lean-forward="true" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+        <state relative-caret-position="282">
+          <caret line="180" column="10" lean-forward="true" selection-start-line="180" selection-start-column="10" selection-end-line="180" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#label#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#9;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#12;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

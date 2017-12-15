@@ -1286,16 +1286,12 @@ var VisualizerUI = (function($, window, undefined) {
             no_cancel: true,
             open: function(evt) {
                 keymap = {};
-                // aspects of the data form relating to the current document should
-                // only be shown when a document is selected.
                 if (!doc) {
                     $('#document_export').hide();
                     $('#document_visualization').hide();
                 } else {
                     $('#document_export').show();
                     $('#document_visualization').show();
-                    // the SVG button can only be accessed through the data form,
-                    // so we'll spare unnecessary saves by only saving here
                     saveSVG();
                 }
             }
@@ -1313,6 +1309,48 @@ var VisualizerUI = (function($, window, undefined) {
 
 
       /* ++ importBtnForm End ++ */
+
+
+
+      /* ++ exportForm ++ */
+
+        var exportForm = $('#exportForm');
+
+        var exportFormSubmit = function(evt) {
+            dispatcher.post('hideForm');
+            return false;
+        };
+
+        exportForm.submit(exportFormSubmit);
+        initForm(exportForm, {
+            width: 400,
+            resizable: false,
+            no_cancel: true,
+            open: function(evt) {
+                keymap = {};
+                if (!doc) {
+                    $('#document_export').hide();
+                    $('#document_visualization').hide();
+                } else {
+                    $('#document_export').show();
+                    $('#document_visualization').show();
+                    saveSVG();
+                }
+            }
+        });
+
+        var showExportForm = function () {
+            dispatcher.post('showForm', [exportForm]);
+        }
+
+        $('#export_button').click(showExportForm);
+
+
+
+        /* ++ exportForm End ++ */
+
+
+
 
 
 
