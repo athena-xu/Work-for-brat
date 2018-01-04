@@ -38,6 +38,8 @@ from tag import tag
 from delete import delete_document, delete_collection
 from norm import norm_get_name, norm_search, norm_get_data
 
+from deletetest import delete_test
+
 # no-op function that can be invoked by client to log a user action
 def logging_no_op(collection, document, log):
     # need to return a dictionary
@@ -63,6 +65,8 @@ DISPATCHER = {
         'createSpan': create_span,
         'deleteSpan': delete_span,
         'splitSpan' : split_span,
+
+        'deletetest': delete_test,
 
         'createArc': create_arc,
         'reverseArc': reverse_arc,

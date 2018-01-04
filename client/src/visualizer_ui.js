@@ -1300,12 +1300,21 @@ var VisualizerUI = (function($, window, undefined) {
 
         /*------------------*/
         var importBtnForm = $('#importForm');
+        if(window.FileReader) {
+          var fr = new FileReader();
+          fr.onloadend = function () {
+
+          }
+        }else{
+
+        }
+
 
         var importBtnFormSubmit = function(evt) {
             dispatcher.post('hideForm');
             var fileList = $('importfiles')[0].files;
             console.log(fileList)
-            // dispatcher.post('ajax',[])
+            dispatcher.post('ajax',[])
             return false;
         };
 
@@ -1321,7 +1330,40 @@ var VisualizerUI = (function($, window, undefined) {
 
         $('#importButton').click(showImportBtnForm);
 
+
       /* ++ importBtnForm End ++ */
+        $('#importfiles').on("change", function () {
+          console.log($('#importfiles'))
+          console.log(this);
+
+          var fileType = [],
+              fileData = [],
+              fileName = [];
+
+
+          for(var i = 0; i < this.files.length; i ++) {
+
+              var fileReader = new FileReader ();
+                  fileType.push(this.files[i].type);
+                  fileName.push(this.files[i].name);
+                  fileReader.readAsBinaryString(this.files[i]);
+                  fileReader.onload = function () {
+                    var fileResult = this.result;
+                    fileData.push(fileResult)
+                  }
+          }
+
+            dispatcher.post('ajax', [{
+                action: 'deletetest',
+                filetype: JSON.stringify(fileType),
+                filename: JSON.stringify(fileName),
+                filedata: JSON.stringify(fileData),
+            }, function (response) {
+                console.log(response)
+                alert('233')
+            }]);
+        })
+
 
 
 
